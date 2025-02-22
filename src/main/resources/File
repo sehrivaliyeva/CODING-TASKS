@@ -1,0 +1,8 @@
+Bu classlar arasinda ola bilecek mumkun elaqeler asagida qeyd olunub
+
+Category<-->Product(OneToMany)
+Brand<--->Category(ManyToMany)
+User<--->Address(OneToOne)
+
+
+"mabbedby"--->sozune diqqet etmek lazmdir
