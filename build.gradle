@@ -29,12 +29,19 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
+    //liquibase
+    implementation 'org.liquibase:liquibase-core'
+
+
     // MapStruct Dependencies
     implementation 'org.mapstruct:mapstruct:1.5.3.Final'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'
 
     // SpringDoc for OpenAPI documentation
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:+'
+
+
+
     runtimeOnly 'com.oracle.database.jdbc:ojdbc11'
 
     implementation 'com.oracle.database.jdbc:ojdbc8:19.8.0.0'

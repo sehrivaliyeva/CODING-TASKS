@@ -18,10 +18,15 @@ import lombok.NoArgsConstructor;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String name;
     private String surname;
+    private String email;
+    private String password;
+
+
+
 
     @OneToOne(mappedBy = "user")
     private Address address;
